@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exam Interface</title>
+    <style>
+        .question { margin-bottom: 20px; }
+        .photo-upload { margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>Online Exam</h1>
+    
+    <!-- User Information Section -->
+    <div class="user-info">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <!-- Photo Upload Section -->
+        <div class="photo-upload">
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+        </div>
+    </div>
+
+    <h2>Answer the following questions:</h2>
+
+    <!-- Questions Section -->
+    <div class="questions">
+        <div class="question">
+            <p>1. The Nyquist stability criterion and the Routh criterion both are powerful analysis tools for determining the stability of feedback controllers. Identify which of the following statements is FALSE:</p>
+            <label><input type="radio" name="q1" value="correct"> (A) Both the criteria provide information relative to the stable gain range of the system.</label><br>
+            <label><input type="radio" name="q1" value="incorrect"> (B) The general shape of the Nyquist plot is readily obtained from the Bode magnitude plot for all minimum-phase systems.</label><br>
+            <label><input type="radio" name="q1" value="incorrect"> (C) The Routh criterion is not applicable in the condition of transport lag, which can be readily handled by the Nyquist criterion.</label><br>
+            <label><input type="radio" name="q1" value="incorrect"> (D) The closed-loop frequency response for a unity feedback system cannot be obtained from the Nyquist plot.</label><br>
+        </div>
+        
+        <div class="question">
+            <p>2. In a p-n junction diode at equilibrium, which one of the following statements is NOT TRUE?</p>
+            <label><input type="radio" name="q2" value="incorrect"> (A) The hole and electron diffusion current components are in the same direction.</label><br>
+            <label><input type="radio" name="q2" value="incorrect"> (B) The hole and electron drift current components are in the same direction.</label><br>
+            <label><input type="radio" name="q2" value="correct"> (C) On an average, holes and electrons drift in opposite direction.</label><br>
+            <label><input type="radio" name="q2" value="incorrect"> (D) On an average, electrons drift and diffuse in the same direction.</label><br>
+        </div>
+        
+        <div class="question">
+            <p>3. A function F(A, B, C) defined by three Boolean variables A, B, and C when expressed as sum of products is given by F = A̅⋅ B̅ ⋅ C̅ + A̅⋅ B ⋅ C̅ + A ⋅ B̅ ⋅ C̅. The product of sums (POS) form of the function F is:</p>
+            <label><input type="radio" name="q3" value="incorrect"> (A) (A + B + C) ⋅ (A + B̅ + C) ⋅ (A̅ + B + C)</label><br>
+            <label><input type="radio" name="q3" value="correct"> (B) (A̅ + B̅ + C̅) ⋅ (A̅ + B + C̅) ⋅ (A + B̅ + C̅)</label><br>
+            <label><input type="radio" name="q3" value="incorrect"> (C) (A + B + C̅) ⋅ (A + B̅ + C̅) ⋅ (A̅ + B + C̅) ⋅ (A̅ + B̅ + C) ⋅ (A̅ + B̅ + C̅)</label><br>
+            <label><input type="radio" name="q3" value="incorrect"> (D) (A̅ + B̅ + C) ⋅ (A̅ + B + C) ⋅ (A + B̅ + C) ⋅ (A + B + C̅) ⋅ (A + B + C)</label><br>
+        </div>
+        
+        <div class="question">
+            <p>4. Let M be a real 4x4 matrix. Consider the following statements: S1: M has 4 linearly independent eigenvectors. S2: M has 4 distinct eigenvalues. S3: M is non-singular (invertible). Which one among the following is TRUE?</p>
+            <label><input type="radio" name="q4" value="incorrect"> (A) S1 implies S2</label><br>
+            <label><input type="radio" name="q4" value="incorrect"> (B) S1 implies S3</label><br>
+            <label><input type="radio" name="q4" value="correct"> (C) S2 implies S1</label><br>
+            <label><input type="radio" name="q4" value="incorrect"> (D) S3 implies S2</label><br>
+        </div>
+        
+        <div class="question">
+            <p>5. For a given system, the Bode plot shows a gain crossover frequency of 10 rad/s and a phase crossover frequency of 5 rad/s. Which of the following statements is true for the stability of the system?</p>
+            <label><input type="radio" name="q5" value="incorrect"> (A) The system is stable because the phase margin is positive.</label><br>
+            <label><input type="radio" name="q5" value="incorrect"> (B) The system is stable because the gain margin is positive.</label><br>
+            <label><input type="radio" name="q5" value="incorrect"> (C) The system is marginally stable.</label><br>
+            <label><input type="radio" name="q5" value="correct"> (D) The system is unstable because the phase crossover frequency is lower than the gain crossover frequency.</label><br>
+        </div>
+        
+        <div class="question">
+            <p>6. In a MOSFET, the channel is formed by:</p>
+            <label><input type="radio" name="q6" value="incorrect"> (A) The source terminal.</label><br>
+            <label><input type="radio" name="q6" value="incorrect"> (B) The drain terminal.</label><br>
+            <label><input type="radio" name="q6" value="correct"> (C) The gate terminal.</label><br>
+            <label><input type="radio" name="q6" value="incorrect"> (D) The substrate and source-drain terminals.</label><br>
+        </div>
+        
+        <div class="question">
+            <p>7. In a digital circuit, the clock frequency is 1 MHz. The time period of each clock cycle will be:</p>
+            <label><input type="radio" name="q7" value="incorrect"> (A) 1 ns</label><br>
+            <label><input type="radio" name="q7" value="correct"> (B) 1 μs</label><br>
+            <label><input type="radio" name="q7" value="incorrect"> (C) 10 ns</label><br>
+            <label><input type="radio" name="q7" value="incorrect"> (D) 10 μs</label><br>
+        </div>
+        
+        <div class="question">
+            <p>8. The transfer function \( G(s) = \frac{10}{s(s+2)} \) represents a:</p>
+            <label><input type="radio" name="q8" value="incorrect"> (A) First-order system</label><br>
+            <label><input type="radio" name="q8" value="correct"> (B) Second-order system</label><br>
+            <label><input type="radio" name="q8" value="incorrect"> (C) Third-order system</label><br>
+            <label><input type="radio" name="q8" value="incorrect"> (D) None of the above</label><br>
+        </div>
+        
+        <div class="question">
+            <p>9. Which of the following statements about feedback in a control system is true?</p>
+            <label><input type="radio" name="q9" value="incorrect"> (A) Positive feedback reduces the gain of the system.</label><br>
+            <label><input type="radio" name="q9" value="correct"> (B) Negative feedback improves stability.</label><br>
+            <label><input type="radio" name="q9" value="incorrect"> (C) Feedback does not affect the bandwidth.</label><br>
+            <label><input type="radio" name="q9" value="incorrect"> (D) Feedback always increases the gain of the system.</label><br>
+        </div>
+        
+        <div class="question">
+            <p>10. A synchronous machine operates at a speed of:</p>
+            <label><input type="radio" name="q10" value="incorrect"> (A) Below synchronous speed</label><br>
+            <label><input type="radio" name="q10" value="incorrect"> (B) Above synchronous speed</label><br>
+            <label><input type="radio" name="q10" value="correct"> (C) At synchronous speed</label><br>
+            <label><input type="radio" name="q10" value="incorrect"> (D) Independent of synchronous speed</label><br>
+        </div>
+        
+    </div>
+
+    <br>
+    <button onclick="submitExam()">Submit Exam</button>
+
+    <div id="certificate" style="display: none; margin-top: 50px; text-align: center; border: 2px solid black; padding: 20px; width: 50%; margin-left: auto; margin-right: auto;">
+        <h2>Certificate of Completion</h2>
+        <p>This certifies that</p>
+        <h3 id="certName"></h3>
+        <p>has successfully completed the exam.</p>
+        <p><strong>Email:</strong> <span id="certEmail"></span></p>
+        <p><strong>Phone:</strong> <span id="certPhone"></span></p>
+        <p><strong>Score:</strong> <span id="certScore"></span> out of 30</p>
+        <img id="certPhoto" alt="Uploaded photo" style="width: 100px; height: 100px; margin-top: 20px;">
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
